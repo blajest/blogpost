@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:#f4d04e;;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .card{
+            background-color: white;
+            border-radius: 15px;
+            max-width: 320px;
+            width: 100%;
+            padding: 22px;
+            box-shadow: 8px 7px 0px rgba(0, 0, 0, 1);
+            border: 1px solid #111;
+        }
+        .image-container{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .image-container img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+        }
+        .learning{
+            background-color: #f4d04e;
+            font-size: 13px;
+            padding: 4px 10px;
+            margin-bottom: 12px;
+            display: inline-block;
+            border-radius: 4px;
+            font-weight: 800;
+        }
+        .date{
+            font-size: 13px;
+            font-weight: 300;
+            margin-bottom: 12px;
+        }
+        h1{
+            font-size: 19.5px;
+            margin-bottom: 12px;
+        }
+        h1:hover{
+            color: #f4d04e;
+        }
+        p{
+            font-size: 14.5px;
+            line-height: 1.5;
+            color: #757575;
+            margin-bottom: 24px;
+        }
+        .avatar{
+            gap: 12px;
+            display: flex;
+            align-items: center;
+        }
+        .avatar img{
+            width: 35px;
+            height: 35px;
+        }
+        .avatar h5{
+            font-size: 14px;
+        }
+        @media (max-width: 425px) {
+            .card {
+                max-width: 320px;
+            }
+            
+            h1 {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="image-container">
+            <img src="images/illustration-article.svg" alt="">
+        </div>
+        <div class="learning"><h4>Learning</h4></div>
+        <div class="date">Published 21 Dec 2023</div>
+        <h1>HTML & CSS Foundations</h1>
+        <p>These languages are the backbone of every website, defining structure, content and presentation.</p>
+        <div class="avatar"><img src="images/image-avatar.webp" alt="">
+            <h5>Greg Hooper</h5>
+        </div>
+    </div>
+</body>
+</html>
